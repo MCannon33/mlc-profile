@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* styles for the entire page */
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* styles and padding of the header */
+header {
+    padding: 20px 35px;
+    background-color: #D8BFD8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* h1 styles */
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+  }
+  /* header nav flex */
+ header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: right;
+  list-style: none;
+}
+ /* nav list specifics */
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 2vw;
+}
+ /* reduce h1 space */
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #490949;
+  margin: 0;
+}
+section {
+  padding: 60px;
+}
+/* Hero Section */
+.hero {
+  background-image: url("../mlcimages/mlcbackground.png");
+  height: 600px;
+  display: flex;
+}
+body {
+  margin: 50px;
+}
+/* TODO: Add your code for the grid-container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  margin: 5px 5px;
+  border-radius: 5px;
+  font-size: 35px;
+  background-color: #490949;
+}
+.item-3 {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 4;
+}
+.grid-item:nth-child(3n) {
+  grid-column: 1;
+  grid-row: 1;
+}

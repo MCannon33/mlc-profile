@@ -44,3 +44,13 @@ header h1 {
   color: #490949;
   margin: 0;
 }
+section {
+  padding: 60px;
+}
+/* Hero Section */
+.hero {
+  background-image: url("../mlcimages/mlcbackground.png");
+  height: 600px;
+  display: flex;
+}
+

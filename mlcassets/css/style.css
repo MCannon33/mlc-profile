@@ -16,13 +16,6 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* h1 styles */
-h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #000000;
-    margin: 0;
-  }
   /* header nav flex */
  header nav ul {
   display: flex;
@@ -38,7 +31,7 @@ header nav ul li a {
   font-size: 2vw;
   color: #000000;
 }
- /* reduce h1 space */
+ /* h1 style */
 header h1 {
   font-weight: bold;
   font-size: 25px;
@@ -56,7 +49,7 @@ section {
   height: 600px;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start
+  align-items: flex-start;
 }
 /* h2 styles */
 h2 {
@@ -64,15 +57,23 @@ h2 {
   font-size: 3vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #000000;
-  font-display: left;
-  margin: 0;
+  flex-wrap: wrap;
 }
-.h3 {
+/* About Me styles */
+.intro {
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 1.2vw;
+  display: inline-block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #000000;
-  border: #490949;
+  border-bottom: 3px solid;
+  margin-bottom: 0 auto 30 auto;
+  border-bottom: #490949;
+  padding-bottom: 20px;
+}
+.intro p {
+  display: flex;
+  font-weight: lighter;
 }
 body {
   margin: 50px;
@@ -114,7 +115,22 @@ body {
   grid-row: 9 / span 3;
   grid-column: 5 / span 4;
 }
-
+/* Contact Me */
+ .contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: right;
+  list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Footer*/
+footer h4 {
+  color: #490949;
+  font-size: 30px;
+  margin: 0;
+  display: flex;
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   /* this will be applied on any screen smaller than 980px */

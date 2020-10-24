@@ -78,7 +78,7 @@ body {
   margin: 50px;
 }
 
-/* TODO: Add your code for the grid-container */
+/* Grid-container */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(20, 1fr);

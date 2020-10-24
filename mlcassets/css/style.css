@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* styles for the entire page */
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* styles and padding of the header */
+header {
+    padding: 20px 35px;
+    background-color: #D8BFD8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* h1 styles */
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+  }
+  /* header nav flex */
+ header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: right;
+  list-style: none;
+}
+ /* nav list specifics */
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 2vw;
+  color: #000000;
+}
+ /* reduce h1 space */
+header h1 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #490949;
+  margin: 0;
+}
+section {
+  padding: 60px;
+}
+/* Hero Section */
+.hero {
+  background-image: url("../../mlcimages/mlcbackground.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start
+}
+/* h2 styles */
+h2 {
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+  font-display: left;
+  margin: 0;
+}
+.h3 {
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+  border: #490949;
+}
+body {
+  margin: 50px;
+}
+
+/* Grid-container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-gap: 25px
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  margin: 5px 5px;
+  border-radius: 5px;
+  font-size: 3vw;
+  background-color: rgb(103, 20, 133);
+}
+.item-1 {
+  grid-row: 2/ span 6;
+  grid-column: 1 / span 5;
+}
+.item-2 {
+  grid-row: 2/ span 3;
+  grid-column: 7 / span 4;
+}
+.item-3 {
+  grid-row: 5 / span 3;
+  grid-column: 7 / span 4;
+}
+.item-4 {
+  grid-row: 9 / span 3;
+  grid-column: 1 / span 4;
+}
+.item-5 {
+  grid-row: 9 / span 3;
+  grid-column: 5 / span 4;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  /* this will be applied on any screen smaller than 980px */
+    .header {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+  
+    .header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  }

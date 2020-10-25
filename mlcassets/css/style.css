@@ -6,7 +6,7 @@
   }
   body {
     /* styles for the entire page */
-  color: #000000;
+  color: #ffffff
   font-family: Helvetica, Arial, sans-serif;
 }
 /* styles and padding of the header */
@@ -44,11 +44,12 @@ section {
 }
 /* Hero Section */
 .hero {
-  background-image: url("../../mlcimages/mlcbackground.png");
+  background-image: url("../../mlcimages/mlcbackground2.png");
   background-size: cover;
   background-position: center;
   height: 600px;
   display: flex;
+  justify-content: left;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -58,6 +59,8 @@ h2 {
   font-size: 3vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #000000;
+  flex-wrap: wrap;
+  justify-content: left;
   flex-wrap: wrap;
 }
 /* About Me styles */
@@ -79,6 +82,25 @@ h2 {
 body {
   margin: 50px;
 }
+/* About Me .grid-container */
+.about-me-grid-item {
+  background: lightpink;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 2px solid #490949;
+  color:  #494949;
+  font-size: 1.2rem;
+  writing-mode: vertical-lr;
+  grid-column: 1;
+  grid-row: 1 / -1;
+  transform: rotate(180deg);
+}
+.about-me-grid-item header {
+  grid-row: 1;
+  grid-column: -1;
+}
 
 /* Grid-container */
 .grid-container {
@@ -99,22 +121,27 @@ body {
 .item-1 {
   grid-row: 2/ span 6;
   grid-column: 1 / span 5;
+  background-image: url("../../mlcimages/temple.jpg");
 }
 .item-2 {
   grid-row: 2/ span 3;
   grid-column: 7 / span 4;
+  background-image: url("../../mlcimages/temple.jpg");
 }
 .item-3 {
   grid-row: 5 / span 3;
   grid-column: 7 / span 4;
+  background-image: url("../../mlcimages/temple.jpg");
 }
 .item-4 {
   grid-row: 9 / span 3;
   grid-column: 1 / span 4;
+  background-image: url("../../mlcimages/mlcbackground2.png");
 }
 .item-5 {
   grid-row: 9 / span 3;
   grid-column: 5 / span 4;
+  background-image: url("../../mlcimages/mlcbackground2.png");
 }
 /* Contact Me */
  .contact ul {
@@ -145,3 +172,9 @@ footer h4 {
       text-align: center;
     }
   }
+  @media screen and (max-width: 768px) {
+    /* this will be applied on any screen between 768px and 575px */
+    .hero {
+      height: 200px;
+      width: auto;
+    }

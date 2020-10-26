@@ -7,6 +7,6 @@ This is a profile of my (Maria Cannon's) work.
 
 *Description: This is the begining of my web developer profile 
 
-*Live link:(https://github.com/MCannon33/mlc-profile.github.io)
+*Live link:(https://github.com.mlc-profile.github.io)
 
 *HTML and Advanced CSS! :nerd_face:

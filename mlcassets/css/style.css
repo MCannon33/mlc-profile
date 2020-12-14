@@ -88,7 +88,7 @@ header h1 {
   display: flex;
   background-color: #d2a7d2;
   justify-content: space-around;
-  height: 175px;
+  height: 200px;
   align-items: center;
 }
 
@@ -97,6 +97,12 @@ header h1 {
   width: 200px;
   font-family: Georgia;
   color: #490949;
+  text-align: center;
+}
+
+.line {
+  border-right: 5px solid black;
+  height: 150px;
 }
 
 .about-body {
@@ -128,10 +134,10 @@ header h1 {
   grid-row: 1 / -1;
   transform: rotate(180deg);
 } */
-.about-me-grid-item header {
+/* .about-me-grid-item header {
   grid-row: 1;
   grid-column: -1;
-}
+} */
 
 /* Grid-container */
 .grid-container-work {

@@ -32,6 +32,7 @@ img {
 }
 /* nav list specifics */
 header nav ul li a {
+  color: #000000;
   display: flex;
   padding: 15px;
   font-weight: 20px;
@@ -47,7 +48,6 @@ header nav ul li a:hover {
 }
 li,
 a button {
-  font-family: sans-serif;
   font-size: 15px;
   text-decoration: none;
 }

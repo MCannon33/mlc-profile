@@ -1,12 +1,10 @@
 * {
-  margin: 0;
+  margin: 5px;
   padding: 0px;
   box-sizing: border-box;
 }
 body {
-  /* styles for the entire page */
-  /* color: #ffffff; */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, Helvetica, Arial, sans-serif;
 }
 /* styles and padding of the header */
 header {
@@ -20,8 +18,6 @@ header {
 header nav ul {
   display: flex;
   background-color: #d8bfd8;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
   align-items: right;
   list-style: none;
 }
@@ -33,6 +29,7 @@ img {
 /* nav list specifics */
 header nav ul li a {
   color: #000000;
+  font-family: Georgia;
   display: flex;
   padding: 15px;
   font-weight: 20px;
@@ -70,11 +67,13 @@ header h1 {
   background-image: url("../../mlcimages/mlcheadshot.png");
   background-size: cover;
   background-position: center;
-  height: 350px;
+  height: 700px;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
   align-items: flex-start;
+  padding: 10px;
+  background-image: 100%;
 }
 /* h2 styles */
 .hero h2 {
@@ -82,33 +81,40 @@ header h1 {
   font-size: 3vw;
   font-family: Georgia;
   color: #494949;
-  margin: 0;
-  padding: 5px 10px;
-  align-items: right;
+  float: right;
 }
 /* About Me styles */
-.intro {
-  font-weight: bold;
-  font-size: 1.2vw;
-  display: inline-block;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #000000;
-  border-bottom: 3px solid;
-  margin-bottom: 0 auto 30 auto;
-  border-bottom: #490949;
-  padding-bottom: 20px;
-  margin: 0;
-  padding: 5px 10px;
+.grid-container-section1 {
+  display: flex;
+  background-color: #d2a7d2;
+  justify-content: space-around;
+  height: 175px;
+  align-items: center;
 }
-.intro p {
+
+.about {
+  height: 100px;
+  width: 200px;
+  font-family: Georgia;
+  color: #490949;
+}
+
+.about-body {
+  height: 100px;
+  width: 400px;
+  font-family: Georgia;
+  color: #490949;
+}
+
+/* .intro p {
   display: flex;
   font-weight: lighter;
-}
-body {
+} */
+/* body {
   margin: 50px;
-}
+} */
 /* About Me .grid-container */
-.about-me-grid-item {
+/* .about-me-grid-item {
   background: lightpink;
   width: 80%;
   display: grid;
@@ -121,14 +127,14 @@ body {
   grid-column: 1;
   grid-row: 1 / -1;
   transform: rotate(180deg);
-}
+} */
 .about-me-grid-item header {
   grid-row: 1;
   grid-column: -1;
 }
 
 /* Grid-container */
-.grid-container {
+.grid-container-work {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(50px, 1fr);

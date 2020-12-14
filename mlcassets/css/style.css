@@ -1,53 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #D8BFD8;
-  }
-  body {
-    /* styles for the entire page */
-  color: #ffffff;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  /* styles for the entire page */
+  /* color: #ffffff; */
   font-family: Helvetica, Arial, sans-serif;
 }
 /* styles and padding of the header */
 header {
-    padding: 20px 35px;
-    background-color: #D8BFD8;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-  /* header nav flex */
- header nav ul {
+  padding: 20px;
+  background-color: #d8bfd8;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+/* header nav flex */
+header nav ul {
+  display: flex;
+  background-color: #d8bfd8;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   align-items: right;
   list-style: none;
 }
- /* nav list specifics */
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 2vw;
-  color: #000000;
+img {
+  height: 100px;
+  padding: 10px;
+  display: flex;
 }
- /* h1 style */
+/* nav list specifics */
+header nav ul li a {
+  display: flex;
+  padding: 15px;
+  font-weight: 20px;
+  font-size: 2vw;
+  list-style: none;
+  text-align: right;
+  background-color: #d8bfd8;
+  transition: all 0.2s ease 0s;
+}
+
+header nav ul li a:hover {
+  color: honeydew;
+}
+li,
+a button {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+li,
+a button {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+/* h1 style */
 header h1 {
   font-weight: bold;
   font-size: 25px;
   color: #490949;
   margin: 0;
 }
-section {
-  padding: 60px;
-}
+
 /* Hero Section */
 .hero {
   background-image: url("../../mlcimages/mlcheadshot.png");
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 350px;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -57,18 +80,18 @@ section {
 .hero h2 {
   font-weight: bold;
   font-size: 3vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia;
   color: #494949;
   margin: 0;
   padding: 5px 10px;
-  display: inline;
+  align-items: right;
 }
 /* About Me styles */
 .intro {
   font-weight: bold;
   font-size: 1.2vw;
   display: inline-block;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #000000;
   border-bottom: 3px solid;
   margin-bottom: 0 auto 30 auto;
@@ -92,7 +115,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   border: 2px solid #490949;
-  color:  #494949;
+  color: #494949;
   font-size: 1.2rem;
   writing-mode: vertical-lr;
   grid-column: 1;
@@ -109,7 +132,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(50px, 1fr);
-  row-gap: 10px
+  row-gap: 10px;
 }
 .grid-item {
   display: grid;
@@ -120,14 +143,14 @@ body {
   font-size: 3vw;
 }
 .item-1 {
-  grid-row: 2/ span 6;
+  grid-row: 2 / span 6;
   grid-column: 1 / span 5;
   background-image: url("../../mlcimages/temple.jpg");
   grid-template-columns: min-content;
   grid-template-rows: min-content;
 }
 .item-2 {
-  grid-row: 2/ span 3;
+  grid-row: 2 / span 3;
   grid-column: 7 / span 4;
   background-image: url("../../mlcimages/temple.jpg");
   grid-template-columns: min-content;
@@ -155,32 +178,32 @@ body {
   grid-template-rows: min-content;
 }
 /* Contact Me */
- .contact-me address {
+.contact-me address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
   list-style: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   flex-direction: column;
 }
 /* Footer Style*/
-.footer  {
+.footer {
   color: #490949;
   font-size: 30px;
   margin: 0;
   display: flex;
   align-items: center;
 }
-@media (hover: hover) {
+/* @media (hover: hover) {
   .grid-item:hover {
     background:lightpink;
     opacity: 0.09;
-  }
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  } */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER
 @media screen and (max-width: 980px) {
   /* this will be applied on any screen smaller than 980px */
-    header {
+/* header {
       padding-bottom: 0;
       justify-content: center;
     }
@@ -191,14 +214,14 @@ body {
 
   @media screen and (max-width: 768px) {
     /* this will be applied on any screen between 768px and 575px */
-    .hero {
+/* .hero {
       height: 200px;
       width: auto;
     }
 
     @media screen and (max-width: 768px) {
       /* this will be applied on any screen between 768px and 575px */
-      .hero h2 {
+/* .hero h2 {
         justify-content: left;
       }
-      }
+     */

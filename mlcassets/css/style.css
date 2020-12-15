@@ -191,6 +191,43 @@ header h1 {
   grid-template-rows: min-content;
 }
 /* Contact Me */
+.flex-container-contact {
+  display: flex;
+  background-color: rgba(104, 66, 101, 0.2);
+  flex-wrap: wrap;
+  font-family: Georgia;
+  text-align: center;
+  align-items: center;
+}
+.flex-item-contact {
+  border: 1px black dotted;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: center;
+}
+
+.contact {
+  font-family: Georgia;
+  text-align: center;
+  color: azure;
+}
+.line-contact {
+  border-right: 5px solid black;
+  height: 300px;
+  margin: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+li,
+a button {
+  background-color: transparent;
+}
+
 /* .contact-me address {
   display: flex;
   flex-wrap: wrap;
